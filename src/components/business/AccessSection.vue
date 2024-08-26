@@ -1,14 +1,14 @@
 <template>
     <div class="container">
-        <!-- <h1 class="text-warning mb-3">Access our tools to grow faster on Fameset</h1> --> 
+        <!-- <h1 class="text-warning mb-3">Access our tools to grow faster on Bharatke</h1> --> 
         <p class="mb-5 fs-5">
             We understand that your online business may require additional support from time to time, and we've got you
             covered.
-            With your Fameset account, you gain access to a range of software and marketing tools designed to grow your business upto 5x.
+            With your Bharatke account, you gain access to a range of software and marketing tools designed to grow your business upto 5x.
         </p> 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col" v-for="tool in tools" :key="tool.title">
-                <div class="card h-100 border-secondary text-white" style="background-color:black !important;">
+                <div class="card h-100 border-secondary text-dark" >
                     <div class="card-body text-start">
                         <div class="d-flex align-items-center">
                             <i :class="tool.icon" class="fs-3"></i>

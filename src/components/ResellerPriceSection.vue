@@ -4,8 +4,8 @@
 
             <div class="row row-cols-1 row-cols-md-4 my-3">
                 <div class="col" v-for="(plan, index) in plans" :key="index">
-                    <div class="card mb-3 px-3 py-2 rounded-0 text-white" :class="{ 'recommended': index === 2 }"
-                        style="background-color:black !important;">
+                    <div class="card mb-3 px-3 py-2 rounded-0 text-dark" :class="{ 'recommended': index === 2 }"
+                        style="">
                         <div class="py-2 border-bottom fw-bold">{{ plan.name }}</div>
                         <div class="card-body text-center">
                             <div class="d-flex justify-content-center align-items-center gap-2">
@@ -27,8 +27,8 @@
                                     style="color:var(--brand-color) !important;">{{ plan.key
                                     }}</small>
                                 <li v-for="(feature, featureIndex) in plan.features.slice(0, 2)" :key="featureIndex"
-                                    class="px-0 d-flex justify-content-between list-group-item text-white text-start text-capitalize border-0 smaller"
-                                    style="background-color:black !important;">
+                                    class="px-0 d-flex justify-content-between list-group-item text-dark text-start text-capitalize border-0 smaller"
+                                     >
                                     <div class="">
                                         <i class="bi bi-check-circle" style="color:var(--brand-color) !important;"></i>
                                         <span class="px-2">
@@ -40,7 +40,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="card-footer  p-0 border-top pt-2" style="background-color:black !important;">
+                        <div class="card-footer  p-0 border-top pt-2" >
                             <div class="btn-group w-100 my-2">
                                 <a :href="'https://wa.me/8860012001?text=' + encodeURIComponent('Hello, I want to get your ' + plan.name + ' service')"
                                     class="btn text-capitalize px-4 text-dark btn-warning">

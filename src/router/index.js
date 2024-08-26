@@ -197,11 +197,11 @@ const routes = [
     name: "SupportersDetails",
     component: () => import('@/pages/profile/SupportersDetails.vue')
   },
-  {
-    path: "/fameset-details",
-    name: "FamesetDetails",
-    component: () => import('@/pages/profile/FamesetDetails.vue')
-  },
+  // {
+  //   path: "/Bharatke-details",
+  //   name: "BharatkeDetails",
+  //   component: () => import('@/pages/profile/BharatkeDetails.vue')
+  // },
   {
     path: "/category-details",
     name: "CategoryDetails",

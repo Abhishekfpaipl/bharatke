@@ -1,8 +1,8 @@
 <template>
     <div class="my-3 py-3">
         <div class="d-md-flex justify-content-center gap-3">
-            <div v-for="(plan, index) in plans" :key="index" class="card mb-3 px-3 py-2 text-white rounded-0"
-                style="background-color:black !important;" :class="{ 'recommended': index === 1 }">
+            <div v-for="(plan, index) in plans" :key="index" class="card mb-3 px-3 py-2 text-dark rounded-0"
+                style=" " :class="{ 'recommended': index === 1 }">
 
                 <div v-if="index === 1" class="position-absolute start-0 m-2 ms-0" style="font-size: 12px; top: 5px;">
                     <span class='text-dark fw-bold bg-warning p-1 px-2 rounded-end-3'>Recommended</span>
@@ -34,8 +34,8 @@
                             style="color:var(--brand-color) !important;">{{ plan.key
                             }}</small>
                         <li v-for="(feature, featureIndex) in plan.features.slice(0, 4)" :key="featureIndex"
-                            class="px-0 d-flex text-white justify-content-between list-group-item text-start text-capitalize border-0"
-                            style="background-color:black !important;">
+                            class="px-0 d-flex text-dark justify-content-between list-group-item text-start text-capitalize border-0"
+                            >
                             <div class="">
                                 <i class="bi bi-check-circle" style="color:var(--brand-color) !important;"></i>
                                 <span class="px-2">

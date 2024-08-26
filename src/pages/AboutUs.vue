@@ -1,9 +1,9 @@
 <template>
-    <div class="text-bg-dark">
+    <div class="text-bg-light">
         <div class="text-center fw-bold py-5 text-white" style="background-color: black " v-observe>
             <p class="fs-1">About Us</p>
         </div>
-        <div class="container rounded-top-5 bg-dark" style="margin-top: -40px;" v-observe>
+        <div class="container rounded-top-5 bg-light" style="margin-top: -40px;" v-observe>
             <SuccessStory :tests="tests" v-observe />
             <div class="my-5">
                 <InfoSection :techTeam="techTeam" :marketingTeam="marketingTeam" :managementTeam="managementTeam"

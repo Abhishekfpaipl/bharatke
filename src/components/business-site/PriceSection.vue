@@ -6,10 +6,10 @@
                 to enter your credit card information to get started. Cancel anytime!</small>
 
             <div class="my-3">
-                <ul class="nav nav-pills justify-content-center sticky-container bg-dark" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills justify-content-center sticky-container bg-light" id="pills-tab" role="tablist">
                     <div class="d-flex p-2 px-3 rounded" style="">
                         <li class="nav-item" role="presentation" v-for="(price, index) in pricing" :key="index">
-                            <button class="nav-link text-white" :class="{ 'active': index === 0 }" :id="'tab-' + index"
+                            <button class="nav-link text-dark" :class="{ 'active': index === 0 }" :id="'tab-' + index"
                                 data-bs-toggle="pill" :data-bs-target="'#content-' + index" type="button" role="tab"
                                 :aria-controls="'content-' + index" :aria-selected="index === 0">{{ price.name
                                 }}</button>
@@ -22,7 +22,7 @@
                         tabindex="0">
                         <div class="d-md-flex justify-content-center gap-3">
                             <div v-for="(plan, index) in price.plans" :key="index"
-                                class="card mb-3 px-3 bg-dark text-white rounded-0" :class="{ 'recommended': index === 1 }">
+                                class="card mb-3 px-3 bg-light text-dark rounded-0" :class="{ 'recommended': index === 1 }">
 
                                 <div v-if="index === 1" class="position-absolute top-0 start-0 m-2 ms-0"
                                     style="font-size: 12px;">
@@ -46,7 +46,7 @@
                                         <small class="text-start text-uppercase fw-bold my-2 text-primary">{{ plan.key
                                             }}</small>
                                         <li v-for="(feature, featureIndex) in plan.features" :key="featureIndex"
-                                            class="bg-dark text-white px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0">
+                                            class="bg-light text-dark px-0 d-flex justify-content-between list-group-item text-start text-capitalize border-0">
                                             <div class="">
                                                 <i class="bi bi-check-circle text-success"></i>
                                                 <span class="px-2">
@@ -59,7 +59,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="card-footer bg-dark p-0 border-top pt-2">
+                                <div class="card-footer bg-light p-0 border-top pt-2">
                                     <p class="card-text text-capitalize">{{ plan.description }}</p>
                                     <div class="d-flex justify-content-center gap-2 my-3">
                                         <button class="btn btn-danger w-100">{{ plan.button }}</button>

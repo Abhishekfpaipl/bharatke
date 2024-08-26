@@ -13,7 +13,7 @@
             <div class="col-12 col-md-8 d-md-flex justify-content-end align-items-center gap-5 mt-3 mt-md-0 w-100">
                 <div class="d-flex align-items-center mx-auto">
                     <img src="/img/logo.svg" style="width: 50px;object-fit: contain;filter: invert(1);">
-                    <p class="mb-0 text-uppercase text-white fs-2">fameset.com</p>
+                    <p class="mb-0 text-uppercase text-white fs-2">Bharatke.com</p>
                 </div>
                 <p class="mb-0 text-white"> All rights
                     reserved<br> Copyright © 2024 </p>
@@ -33,7 +33,7 @@
                 class="text-decoration-none col-md-6 d-flex flex-column flex-md-row justify-content-end gap-md-5 mt-3 mt-md-0">
                 <div class="d-flex align-items-center justify-content-center">
                     <img src="/img/logo.svg" style="width: 50px;object-fit: contain;filter: invert(1);">
-                    <p class="mb-0 text-uppercase text-white fs-2">fameset.com</p>
+                    <p class="mb-0 text-uppercase text-white fs-2">Bharatke.com</p>
                 </div>
                 <p class="mb-0 text-white"> All rights
                     reserved<br> Copyright © 2024 </p>

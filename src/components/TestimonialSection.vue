@@ -13,7 +13,7 @@
                     <div class="card-body p-0">
                         <div class="d-flex justify-content-between align-items-center bg-light border-bottom p-2">
                             <span class="">
-                                <span>Fameset </span>
+                                <span>Bharatke </span>
                                 <i class="bi bi-star-fill text-warning small me-2"></i>
                                 <span class="">{{ getSelectedReviewText.user_rating }}</span>
                             </span>

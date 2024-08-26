@@ -8,7 +8,7 @@
         <div class="offcanvas-body">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-start  align-items-center">
-                    <p class="my-3 pb-1 fs-1">FAMESET</p>
+                    <p class="my-3 pb-1 fs-1">Bharatke</p>
                     <div class="fs-2 mb-2 border rounded py-1 w-100">Rating <span class="text-warning"><i
                                 class="bi bi-star-fill text-warning"></i> {{
                                     averageRating.toFixed(1) }}</span></div>

@@ -1,10 +1,10 @@
 <template>
     <div class="container my-5">
         <h1 class="mb-2">
-            <span class="text-warning">Your Journey</span> on Fameset
+            <span class="text-warning">Your Journey</span> on Bharatke
         </h1>
         <p class="text-muted mb-4">
-            Starting your online business with Fameset is easy. 14 lakh+ sellers trust Fameset with their business
+            Starting your online business with Bharatke is easy. 14 lakh+ sellers trust Bharatke with their business
         </p>
 
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-2">
@@ -37,17 +37,17 @@ export default {
                 },
                 {
                     title: "List",
-                    description: "List your products (min 1 no.) that you want to sell on Fameset.",
+                    description: "List your products (min 1 no.) that you want to sell on Bharatke.",
                     image: "https://static-assets-web.flixcart.com/fk-sp-static/images/prelogin/icons/Group_2_1.svg"
                 },
                 {
                     title: "Orders",
-                    description: "Receive orders from over 45 crore+ Fameset customers.",
+                    description: "Receive orders from over 45 crore+ Bharatke customers.",
                     image: "https://static-assets-web.flixcart.com/fk-sp-static/images/orders-icon.svg"
                 },
                 {
                     title: "Shipment",
-                    description: "Fameset ensures stress free delivery of your products",
+                    description: "Bharatke ensures stress free delivery of your products",
                     image: "https://static-assets-web.flixcart.com/fk-sp-static/images/shipment-icon.svg"
                 },
                 {

@@ -5,12 +5,12 @@
                 <h2 class="mb-3">
                     <span class="text-warning">Seller Success</span> Stories
                 </h2>
-                <p class="mb-4">14 Lakh+ sellers trust Fameset for their online business.</p>
+                <p class="mb-4">14 Lakh+ sellers trust Bharatke for their online business.</p>
                 <!-- <button class="btn btn-outline-primary">See All Stories</button> -->
             </div>
             <div class="col-md-6">
                 <div class="position-relative">
-                    <div class="card border-0 shadow text-white" style="background-color: black !important">
+                    <div class="card border-0 shadow text-dark" >
                         <div class="card-body">
                             <div class="d-flex flex-column justify-content-center align-items-center mb-3">
                                 <img :src="currentStory.image" alt="Seller" class="rounded-circle me-3" width="60"
@@ -53,19 +53,19 @@ export default {
                     name: "Raju Lunawath",
                     company: "Amazestore",
                     image: "img/users/1.png",
-                    quote: "Fameset's support & innovation fueled my exponential growth. I started with 1 category and moved to 6 categories with an astounding 5x Year on Year expansion!"
+                    quote: "Bharatke's support & innovation fueled my exponential growth. I started with 1 category and moved to 6 categories with an astounding 5x Year on Year expansion!"
                 },
                 {
                     name: "Deep Bajaj",
                     company: "Sirona Hygiene",
                     image: "img/users/2.png",
-                    quote: "Fameset created awareness about intimate & menstrual hygiene products. Their team's involvement made our innovative products household favourites."
+                    quote: "Bharatke created awareness about intimate & menstrual hygiene products. Their team's involvement made our innovative products household favourites."
                 },
                 {
                     name: "Ekta Shah",
                     company: "Glide Route Ventures",
                     image: "img/users/3.png",
-                    quote: "From 5 to 40+ brands, Fameset's seamless registration, seller support & account managers' guidance fueled our growth in beauty & grooming sectors."
+                    quote: "From 5 to 40+ brands, Bharatke's seamless registration, seller support & account managers' guidance fueled our growth in beauty & grooming sectors."
                 },
             ]
         }

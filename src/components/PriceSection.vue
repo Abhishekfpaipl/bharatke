@@ -4,7 +4,7 @@
             <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                 <div class="d-flex border  border-secondary p-2 px-3 rounded shadow">
                     <li class="nav-item" role="presentation" v-for="(price, index) in pricing" :key="price.id">
-                        <button class="nav-link text-white" :class="{ 'active': index === 0 }" :id="'tab-' + index"
+                        <button class="nav-link text-dark" :class="{ 'active': index === 0 }" :id="'tab-' + index"
                             data-bs-toggle="pill" :data-bs-target="'#content-' + index" type="button" role="tab"
                             :aria-controls="'content-' + index" :aria-selected="index === 0">{{ price.name }}</button>
                     </li>
@@ -15,7 +15,7 @@
                     :key="price.id" :id="'content-' + index" role="tabpanel" :aria-labelledby="'tab-' + index"
                     tabindex="0">
                     <div class="table-responsive pb-4">
-                        <table class="table table-bordered table-dark table-striped" style="width: 100%;">
+                        <table class="table table-bordered table-light table-striped" style="width: 100%;">
                             <thead class="border-bottom  border-secondary">
                                 <tr>
                                     <th class="text-start">Plan Features</th>
@@ -80,7 +80,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: false },
                                 { id: 6, name: "Rewards", included: false },
@@ -88,9 +88,9 @@ export default {
                                 { id: 7, name: "Certificates", included: false },
                                 { id: 7, name: "Verifications", included: false },
                                 { id: 7, name: "PR Management", included: false },
-                                { id: 8, name: "Fameset Badges", included: false },
-                                { id: 3, name: "Fameset Listing", included: false },
-                                { id: 4, name: "Fameset Marketing", included: false },
+                                { id: 8, name: "Bharatke Badges", included: false },
+                                { id: 3, name: "Bharatke Listing", included: false },
+                                { id: 4, name: "Bharatke Marketing", included: false },
                                 { id: 11, name: "Business Accounts", included: false },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -104,7 +104,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -112,9 +112,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: false },
                                 { id: 7, name: "PR Management", included: false },
-                                { id: 8, name: "Fameset Badges", included: false },
-                                { id: 3, name: "Fameset Listing", included: false },
-                                { id: 4, name: "Fameset Marketing", included: false },
+                                { id: 8, name: "Bharatke Badges", included: false },
+                                { id: 3, name: "Bharatke Listing", included: false },
+                                { id: 4, name: "Bharatke Marketing", included: false },
                                 { id: 11, name: "Business Accounts", included: false },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -128,7 +128,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -136,9 +136,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: true },
                                 { id: 7, name: "PR Management", included: true },
-                                { id: 8, name: "Fameset Badges", included: true },
-                                { id: 3, name: "Fameset Listing", included: true },
-                                { id: 4, name: "Fameset Marketing", included: true },
+                                { id: 8, name: "Bharatke Badges", included: true },
+                                { id: 3, name: "Bharatke Listing", included: true },
+                                { id: 4, name: "Bharatke Marketing", included: true },
                                 { id: 11, name: "Business Accounts", included: true },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -152,7 +152,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -160,9 +160,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: true },
                                 { id: 7, name: "PR Management", included: true },
-                                { id: 8, name: "Fameset Badges", included: true },
-                                { id: 3, name: "Fameset Listing", included: true },
-                                { id: 4, name: "Fameset Marketing", included: true },
+                                { id: 8, name: "Bharatke Badges", included: true },
+                                { id: 3, name: "Bharatke Listing", included: true },
+                                { id: 4, name: "Bharatke Marketing", included: true },
                                 { id: 11, name: "Business Accounts", included: true },
                                 { id: 12, name: "Reseller Accounts", included: true },
                             ],
@@ -183,7 +183,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: false },
                                 { id: 6, name: "Rewards", included: false },
@@ -191,9 +191,9 @@ export default {
                                 { id: 7, name: "Certificates", included: false },
                                 { id: 7, name: "Verifications", included: false },
                                 { id: 7, name: "PR Management", included: false },
-                                { id: 8, name: "Fameset Badges", included: false },
-                                { id: 3, name: "Fameset Listing", included: false },
-                                { id: 4, name: "Fameset Marketing", included: false },
+                                { id: 8, name: "Bharatke Badges", included: false },
+                                { id: 3, name: "Bharatke Listing", included: false },
+                                { id: 4, name: "Bharatke Marketing", included: false },
                                 { id: 11, name: "Business Accounts", included: false },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -207,7 +207,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -215,9 +215,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: false },
                                 { id: 7, name: "PR Management", included: false },
-                                { id: 8, name: "Fameset Badges", included: false },
-                                { id: 3, name: "Fameset Listing", included: false },
-                                { id: 4, name: "Fameset Marketing", included: false },
+                                { id: 8, name: "Bharatke Badges", included: false },
+                                { id: 3, name: "Bharatke Listing", included: false },
+                                { id: 4, name: "Bharatke Marketing", included: false },
                                 { id: 11, name: "Business Accounts", included: false },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -231,7 +231,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -239,9 +239,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: true },
                                 { id: 7, name: "PR Management", included: true },
-                                { id: 8, name: "Fameset Badges", included: true },
-                                { id: 3, name: "Fameset Listing", included: true },
-                                { id: 4, name: "Fameset Marketing", included: true },
+                                { id: 8, name: "Bharatke Badges", included: true },
+                                { id: 3, name: "Bharatke Listing", included: true },
+                                { id: 4, name: "Bharatke Marketing", included: true },
                                 { id: 11, name: "Business Accounts", included: true },
                                 { id: 12, name: "Reseller Accounts", included: false },
                             ],
@@ -255,7 +255,7 @@ export default {
                             features: [
                                 { id: 10, name: "Authorized Seller", included: true },
                                 { id: 1, name: "Premium Accounts", included: true },
-                                { id: 2, name: "Fameset Course", included: true },
+                                { id: 2, name: "Bharatke Course", included: true },
                                 { id: 9, name: "Lead Management", included: true },
                                 { id: 5, name: "Awards", included: true },
                                 { id: 6, name: "Rewards", included: true },
@@ -263,9 +263,9 @@ export default {
                                 { id: 7, name: "Certificates", included: true },
                                 { id: 7, name: "Verifications", included: true },
                                 { id: 7, name: "PR Management", included: true },
-                                { id: 8, name: "Fameset Badges", included: true },
-                                { id: 3, name: "Fameset Listing", included: true },
-                                { id: 4, name: "Fameset Marketing", included: true },
+                                { id: 8, name: "Bharatke Badges", included: true },
+                                { id: 3, name: "Bharatke Listing", included: true },
+                                { id: 4, name: "Bharatke Marketing", included: true },
                                 { id: 11, name: "Business Accounts", included: true },
                                 { id: 12, name: "Reseller Accounts", included: true },
                             ],

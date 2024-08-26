@@ -2,7 +2,7 @@
     <div class="bg-dark text-white  pb-5" style="height: 100%;">
         <div class="text-center py-2 text-style">
             <RouterLink to="/" class="text-decoration-none text-warning">
-                <span class="fs-5">Fameset</span>
+                <span class="fs-5">Bharatke</span>
             </RouterLink>
             <h1 class="fw-bold style2" style="letter-spacing: 5px; font-size: 45px;">Gold</h1>
         </div>

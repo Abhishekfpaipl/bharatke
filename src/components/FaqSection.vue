@@ -1,10 +1,10 @@
 <template>
-    <div class="container rounded-top-5 bg-dark">
+    <div class="container rounded-top-5 bg-light">
         <ul class="nav nav-pills justify-content-start align-items-center" id="pills-tab" role="tablist">
             <div class="d-flex overflow-x-scroll gap-3 my-3 p-2 px-3 rounded" id="scroll">
                 <li class="nav-item border border-secondary rounded" role="presentation" v-for="(price, index) in faqs"
                     :key="index">
-                    <button class="nav-link text-white bg-dark " style="white-space: nowrap"
+                    <button class="nav-link text-dark bg-light " style="white-space: nowrap"
                         :class="{ 'active': index === activeTabIndex }" :id="'tab-' + index" data-bs-toggle="pill"
                         :data-bs-target="'#content-' + index" type="button" role="tab"
                         :aria-controls="'content-' + index" :aria-selected="index === activeTabIndex"
@@ -18,7 +18,7 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="d-flex align-items-center shadow p-2 mb-3">
                 <div class="input-group  mb-3">
-                    <input type="search" class="form-control border-secondary text-white" id="floatingInput" v-model="searchTerm" style="background-color:black !important"
+                    <input type="search" class="form-control border-secondary text-dark" id="floatingInput" v-model="searchTerm" 
                         @keyup.enter="search" ref="searchInput" placeholder="Search here...">
                     <span class="input-group-text border-secondary" style="color:#FFF5DD !important; background-color: black !important" id="basic-addon1"> <i class="bi bi-search me-2"
                             @click="search"></i> Search</span>
@@ -69,7 +69,7 @@ export default {
                         {
                             id: 1,
                             question: "What else do I get with a reseller plan?",
-                            answer: "Your reseller plan includes the following extras: * Free Fameset software including email marketing to use for your business."
+                            answer: "Your reseller plan includes the following extras: * Free Bharatke software including email marketing to use for your business."
                         },
                         {
                             id: 2,
@@ -84,7 +84,7 @@ export default {
                         {
                             id: 4,
                             question: "What's your commission payment process?",
-                            answer: "We offer a wide variety of payout options for your commissions (PayPal, EFT, Check, Fameset Good as Gold). We usually pay the commission you earn during one month at the end of the following month. For example, if you earned commission on your reseller hosting sales during January, we'll pay you at the end of February."
+                            answer: "We offer a wide variety of payout options for your commissions (PayPal, EFT, Check, Bharatke Good as Gold). We usually pay the commission you earn during one month at the end of the following month. For example, if you earned commission on your reseller hosting sales during January, we'll pay you at the end of February."
                         },
                         {
                             id: 5,
@@ -94,7 +94,7 @@ export default {
                         {
                             id: 6,
                             question: "Can I customize my storefront?",
-                            answer: "Yes. You can use our Storefront Branding to make your storefront reflect your personal brand. We give you control over your site's domain name, site logo, color scheme, page layout and more. You can always go back and make changes as your business grows. Or, for those resellers that are familiar with WordPress, we encourage you to make a fully customized site using Fameset's WordPress plugin, which you can learn more about here."
+                            answer: "Yes. You can use our Storefront Branding to make your storefront reflect your personal brand. We give you control over your site's domain name, site logo, color scheme, page layout and more. You can always go back and make changes as your business grows. Or, for those resellers that are familiar with WordPress, we encourage you to make a fully customized site using Bharatke's WordPress plugin, which you can learn more about here."
                         },
                         {
                             id: 7,
@@ -108,18 +108,18 @@ export default {
                         },
                         {
                             id: 9,
-                            question: "Are there different ways to partner with Fameset?",
-                            answer: "If you'd like to earn generous commissions through referral sales from your website visitors and email recipients, check out our Affiliate Program. Or, if you are looking for a way to manage all of your customers websites and clients, with one dashboard and a family of integrated tools, check out our Fameset Pro Program."
+                            question: "Are there different ways to partner with Bharatke?",
+                            answer: "If you'd like to earn generous commissions through referral sales from your website visitors and email recipients, check out our Affiliate Program. Or, if you are looking for a way to manage all of your customers websites and clients, with one dashboard and a family of integrated tools, check out our Bharatke Pro Program."
                         },
                         {
                             id: 10,
-                            question: "What is the difference between Fameset Pro and Reseller?",
-                            answer: "Fameset's Reseller program allows you to set your own prices and sell Fameset products under your own brand, whereas Fameset Pro provides developers and designers with free tools to manage their clients and sites."
+                            question: "What is the difference between Bharatke Pro and Reseller?",
+                            answer: "Bharatke's Reseller program allows you to set your own prices and sell Bharatke products under your own brand, whereas Bharatke Pro provides developers and designers with free tools to manage their clients and sites."
                         },
                         {
                             id: 8,
                             question: "Who takes payment from my customer?",
-                            answer: "Although your customers will buy from your white labeled store front, when they enter the transaction experience they will be directed to a still white-labeled cart experience, but that contract, experience and payment collection are managed by WildWestDomains.com, a Fameset entity, in the background. You, as the reseller, then get paid the net commissions from each transacted amount."
+                            answer: "Although your customers will buy from your white labeled store front, when they enter the transaction experience they will be directed to a still white-labeled cart experience, but that contract, experience and payment collection are managed by WildWestDomains.com, a Bharatke entity, in the background. You, as the reseller, then get paid the net commissions from each transacted amount."
                         },
                     ]
                 },

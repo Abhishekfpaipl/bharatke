@@ -1,5 +1,5 @@
 <template>
-    <div class="text-bg-dark">
+    <div class="text-bg-light">
         <div class="">
             <img src="/img/careerBanner.jpg" alt="banner" class="d-none d-md-block"
                 style="width: 100%; height:700px; object-fit: cover; object-position: center;">
@@ -12,7 +12,7 @@
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
                     <div v-for="(data, index) in works" :key="index" class="col">
                         <div class="d-flex flex-column justify-content-center align-items-center border my-1 py-2"
-                            style="background-color: black !important; ">
+                           >
                             <i :class="data.icon" class="fs-4 p-1"></i>
                             <p class="fw-bold mb-1 text-capitalize">{{ data.heading }}</p>
                         </div>
@@ -34,7 +34,7 @@
             <div class="p-2 row">
                 <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
                     <div class="d-flex align-items-center border p-2"
-                        style="background-color: black !important; min-height: 120px;">
+                        style=" min-height: 120px;">
                         <i :class="data.icon" class="fs-2 mx-3"></i>
                         <div class=" ms-2">
                             <span class="fw-bold">{{ data.heading }}</span>
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="container bg-dark py-5" v-observe>
+        <div class="container bg-light py-5" v-observe>
             <div class="row py-5">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <img src="/img/career-benefit.svg" style="width: 500px; max-width: 80%" alt="">

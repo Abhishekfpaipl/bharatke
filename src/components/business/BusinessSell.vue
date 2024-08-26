@@ -2,7 +2,7 @@
   <div class="container my-5"> 
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col" v-for="(reason, index) in reasons" :key="index">
-        <div class="card h-100 hover-scale text-white" style="background-color: black !important;">
+        <div class="card h-100 hover-scale text-dark" >
           <div class="card-body d-flex flex-column">
             <div class="icon-wrapper mb-3">
               <i :class="reason.icon"></i>
@@ -24,7 +24,7 @@ export default {
         {
           "icon": "bi bi-currency-rupee text-warning",
           "title": "Make money",
-          "description": "Thousands of sellers making substantial income by reaching a nationwide customer base through Fameset."
+          "description": "Thousands of sellers making substantial income by reaching a nationwide customer base through Bharatke."
         },
         {
           "icon": "bi bi-lightning-charge-fill text-warning",
@@ -34,7 +34,7 @@ export default {
         {
           "icon": "bi bi-globe text-warning",
           "title": "World's need",
-          "description": "Tap into the vast market where billions of customers are the target audience of Fameset."
+          "description": "Tap into the vast market where billions of customers are the target audience of Bharatke."
         }
       ]
 

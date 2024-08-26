@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-dark">
+    <div class="bg-light">
         <CarouselBanner />
-        <div class=" text-center fw-bold py-5 text-bg-dark">
+        <div class=" text-center fw-bold py-5 text-bg-light">
             <div class="container">
                 <p class="fs-1 mb-0 text-capitalize">Sell with us</p>
                 <p class="fs-5 text-capitalize">it's your own business , let it shine</p>
@@ -65,7 +65,7 @@
                     tempore.</p>
             </div>
         </div>
-        <div class="py-5 rounded-top-5 text-bg-dark" v-observe>
+        <div class="py-5 rounded-top-5 text-bg-light" v-observe>
             <div class="sticky-nav my-4">
                 <div class="d-flex gap-3 p-3 py-2 overflow-x-scroll border-top border-bottom border-secondary" id="scroll"
                     style="background-color:black !important;">

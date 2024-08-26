@@ -1,8 +1,8 @@
 <template>
-    <div class="text-bg-dark">
+    <div class="text-bg-light">
         <CarouselBanner />
         <ResllerImage />
-        <div class="text-center fw-bold py-5 text-bg-dark">
+        <div class="text-center fw-bold py-5 text-bg-light">
             <div class="container">
                 <p class="fs-1 mb-0 text-capitalize">Partnership with us</p>
                 <p class="fs-5 text-capitalize">It's your own business, let it shine</p>

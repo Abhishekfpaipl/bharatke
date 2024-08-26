@@ -65,8 +65,8 @@ export default {
     data() {
         return {
             links: [ 
-                "Arrange your live and personalized demo of Fameset.",
-                "Explian you how Fameset can help you to grow your business.",
+                "Arrange your live and personalized demo of Bharatke.",
+                "Explian you how Bharatke can help you to grow your business.",
                 "Q&A session with our product expert.",
                 "In-depth explanation of pricing and features.",
             ],

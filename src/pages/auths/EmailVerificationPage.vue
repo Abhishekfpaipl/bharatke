@@ -9,7 +9,7 @@
                         style="width: 100%; object-fit: contain; filter: invert(1);">
                     <img :src="`${publicPath}${logo}`" alt="user" class="d-md-none"
                         style="width: 50%; object-fit: contain; filter: invert(1);">
-                    <span class="fs-1 text-uppercase text-white">Fameset</span>
+                    <span class="fs-1 text-uppercase text-white">Bharatke</span>
                 </routerLink>
             </div>
             <div class="container d-flex flex-column justify-content-center col-md-6 bg-light pt-2"

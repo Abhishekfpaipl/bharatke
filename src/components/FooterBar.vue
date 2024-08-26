@@ -5,12 +5,12 @@
                 <router-link to="/">
                     <img :src="img" style="width: 100px;object-fit: contain;filter: invert(1);">
                 </router-link>
-                <p class="mb-0 fs-1 text-uppercase">Fameset</p>
+                <p class="mb-0 fs-1 text-uppercase">Bharatke</p>
             </div>
 
             <div class=" col-12 col-md-4 mb-3 text-center">
                 <p class="mb-2 fw-bold">Contact Us</p>
-                <p class="mb-2">Email : support@fameset.com</p>
+                <p class="mb-2">Email : support@Bharatke.com</p>
                 <p class="mb-2">Mob no. : 91 8860012001</p>
                 <p class="mb-2">Address : 2nd Floor, Block B1/632, <br> Janakpuri, 110058, Delhi, India</p>
                 <div class="d-flex gap-2 justify-content-center">

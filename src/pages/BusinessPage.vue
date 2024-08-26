@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dark">
+    <div class="bg-light">
         <div class="">
             <ServicesFormBanner />
         </div>

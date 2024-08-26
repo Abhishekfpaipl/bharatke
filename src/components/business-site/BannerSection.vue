@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <div class="container-fluid bg-dark text-white">
+        <div class="container-fluid bg-light text-dark">
             <div class="row py-5">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
                     <div class="" style="width:1000px; max-width:70%">

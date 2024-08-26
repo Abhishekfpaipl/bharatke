@@ -5,7 +5,7 @@
                 <router-link to="/" class="d-flex align-items-center text-decoration-none text-white">
                     <img src="/img/logo.svg" alt="logo"
                         style="width: 40px; height: 40px;object-fit: contain; filter: invert(1);">
-                    <span class="ms-1 fs-3">Fameset</span>
+                    <span class="ms-1 fs-3">Bharatke</span>
                     <!-- <i class="bi bi-chevron-left fs-3" @click=goback()></i> -->
                 </router-link>
                 <div class="">
@@ -34,7 +34,7 @@ export default {
                 // { path: "/product-list", name: 'Business', },
                 { path: "/supporters-details", name: 'Supporters', },
                 { path: "/supporters-details", name: 'Promoters', },
-                { path: "/fameset-details", name: 'Fameset', },
+                { path: "/Bharatke-details", name: 'Bharatke', },
                 // { path: "/rewards-details", name: 'Rewards', },
                 { path: "/dashboard", name: 'Manage', },
                 { path: "/notifications-details", name: 'Notifications', },

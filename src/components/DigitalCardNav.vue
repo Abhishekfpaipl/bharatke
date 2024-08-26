@@ -16,7 +16,7 @@
                 </div>
                 <div class="position-absolute end-0 smaller" style="bottom: 10px;">
                     <div class="d-flex gap-1 align-items-start rounded-start-3 px-2 text-dark bg-warning">
-                        <span>Fameset</span>
+                        <span>Bharatke</span>
                         <i class="bi bi-star-fill"></i>
                         <span>8.5</span>
                     </div>

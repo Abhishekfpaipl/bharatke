@@ -1,12 +1,12 @@
 <template>
-    <div class="py-5 text-white" style="background-color: #000">
+    <div class="py-5 text-dark bg-light">
         <h3 class="text-center mb-5 text-capitalize ">we rely on the best to provide the finest service and experience
         </h3>
         <article :class="['wrapper', { 'wrapper--vertical': isVertical }]">
             <div class="marquee" :class="{ 'marquee--vertical': isVertical }">
                 <div class="marquee__group" :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;filter: invert(1)"
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;"
                             alt="">
                         <p class="text-center mb-0">{{ link.name }}</p>
                     </div>
@@ -14,7 +14,7 @@
                 <div aria-hidden="true" class="marquee__group"
                     :style="{ 'animation-direction': isReverse ? 'reverse' : 'normal' }">
                     <div v-for="(link, index) in links" :key="index" class="d-flex flex-column">
-                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain; filter: invert(1)"
+                        <img :src="link.image" style="width:80px;height:80px;object-fit: contain;"
                             alt="">
                         <p class="text-center mb-0">{{ link.name }}</p>
                     </div>

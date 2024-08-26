@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-dark">
+    <div class="bg-light">
         <div class="text-center fw-bold py-5 text-white" style="background-color: black">
             <p class="fs-1">Privacy Policy</p>
         </div>
-        <div class="container py-5 rounded-top-5 bg-dark" style="margin-top: -40px;">
+        <div class="container py-5 rounded-top-5 bg-light" style="margin-top: -40px;">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <div class="card border-0 bg-dark text-white">
+                    <div class="card border-0 bg-light text-dark">
                         <div class="card-body text-start"> 
 
                             <p>SalesWik respects your privacy and is committed to protecting the personal

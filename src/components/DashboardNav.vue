@@ -5,7 +5,7 @@
             <router-link to="/" :class="{ 'hide-on-scroll': hideOnScroll }"
                 class="text-decoration-none text-dark d-flex align-items-center">
                 <img :src="`${publicPath}${img}`" style="width: 50px;object-fit: contain;filter: invert(1);">
-                <span class="text-uppercase text-white fs-3">fameset</span>
+                <span class="text-uppercase text-white fs-3">Bharatke</span>
             </router-link>
         </div> 
     </div>

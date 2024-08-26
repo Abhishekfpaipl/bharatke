@@ -25,7 +25,7 @@ export default {
                 // { id: 1, path: "/product-list", name: "Business", icon: "bi bi-shop", },
                 { id: 1, path: "/request-details", name: "Request", icon: "bi bi-chat-square", count: '9', },
                 { id: 2, path: "/supporters-details", name: "Supporters", icon: "bi bi-people", count: '', },
-                { id: 3, path: "/fameset-details", name: "Fameset", icon: "bi bi-star-fill", count: '', },
+                { id: 3, path: "/Bharatke-details", name: "Bharatke", icon: "bi bi-star-fill", count: '', },
                 { id: 4, path: "/rewards-details", name: "Rewards", icon: "bi bi-trophy", count: '', },
                 { id: 5, path: "/dashboard", name: "Manage", icon: "bi bi-list", count: '', },
             ],

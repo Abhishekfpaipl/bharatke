@@ -1,11 +1,11 @@
 <template>
-    <div class="text-bg-dark" >
+    <div class="text-bg-light" >
         <div class="text-white py-5" style=" background-color:black ;padding-bottom: 6rem !important;"
             v-observe>
             <h1 class="text-center mb-0 fw-bold">Contact Page</h1>
             <p class="small mb-0 text-capitalize text-center">The secret of getting ahead, is getting started</p>
         </div>
-        <div class="container rounded-top-5 bg-dark" style="margin-top: -40px;" v-observe>
+        <div class="container rounded-top-5 bg-light" style="margin-top: -40px;" v-observe>
             <div class="row p-3">
                 <div class="col-12 col-md-6 pt-4 text-center">
                     <ContactForm />
@@ -24,7 +24,7 @@
 
             </div>
         </div>
-        <div class="container-fluid mt-5 py-5 text-white" v-observe>
+        <div class="container-fluid mt-5 py-5 text-dark" v-observe>
             <h1 class="text-uppercase mb-4 text-center">Need to get in touch with us?</h1>
             <div class="row">
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
@@ -35,7 +35,7 @@
                         <div v-for="(icon, index) in contact" :key="index" class="col py-2"
                             @click="handleIconClick(icon.action)">
                             <div class="d-flex justify-content-between align-items-center border p-2 px-4">
-                                <a class="text-white d-flex gap-2 align-items-center text-decoration-none"
+                                <a class="text-dark d-flex gap-2 align-items-center text-decoration-none"
                                     :href="icon.url" target="_blank">
                                     <i :class="icon.icon" class=""></i>
                                     <p class="text-start ms-2 fw-bold mb-0">{{ icon.name }}</p>

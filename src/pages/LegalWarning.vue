@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-dark">
+    <div class="bg-light">
         <div class="text-center fw-bold py-5 text-white" style="background-color: black">
             <p class="fs-1">Legal Warning</p>
         </div>
-        <div class="container py-5 rounded-top-5 bg-dark" style="margin-top: -40px;">
-            <div class="card bg-dark text-white border-0"> 
+        <div class="container py-5 rounded-top-5 bg-light" style="margin-top: -40px;">
+            <div class="card bg-light text-dark border-0"> 
                 <div class="card-body text-start">
                     <p><strong>Please read this legal warning ("Disclaimer") carefully before using our Lead
                             Management Software ("Software").</strong></p>

@@ -13,7 +13,7 @@
             <div class="p-2 row">
                 <div v-for="(data, index) in datas" :key="index" class="col-12 col-md-6 g-3">
                     <div class="d-flex align-items-center border p-2"
-                        style="background-color: black !important; min-height: 120px;">
+                        style=" min-height: 120px;">
                         <i :class="data.icon" class="fs-2 mx-3"></i> 
                         <div class=" ms-2">
                             <span class="fw-bold">{{ data.heading }}</span>

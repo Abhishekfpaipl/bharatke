@@ -205,7 +205,7 @@ export default {
             links: [
                 { path: "/product-list", name: 'Business', },
                 { path: "/supporters-details", name: 'Supporters', },
-                { path: "/fameset-details", name: 'Fameset', },
+                { path: "/Bharatke-details", name: 'Bharatke', },
                 { path: "/rewards-details", name: 'Rewards', },
                 { path: "/dashboard", name: 'Manage', },
 

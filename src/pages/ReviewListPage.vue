@@ -2,7 +2,7 @@
     <div class="p-2 bg-dark">
         <router-link to="/" class="text-decoration-none text-dark d-flex align-items-center">
             <img src="/img/logo.svg" style="width: 50px;object-fit: contain;filter: invert(1);">
-            <span class="text-uppercase text-white fs-3">fameset</span>
+            <span class="text-uppercase text-white fs-3">Bharatke</span>
         </router-link>
     </div>
     <div class="input-group border mb-3 position-sticky p-2 bg-white" style="z-index: 999; top: 0%;">
