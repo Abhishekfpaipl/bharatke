@@ -1,7 +1,7 @@
 <template>
     <div class="container my-3 py-3">
 
-        <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Schedule ~</span></p>
+        <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Working Hours ~</span></p>
         <div class="d-flex justify-content-center">
             <div class="container row row-cols-2 row-cols-md-3 g-2 justify-content-center align-items-center">
                 <div class="col " v-for="(test, index) in test" :key="index">
@@ -10,8 +10,8 @@
                         <i class="bi bi-clock-fill fs-1 my-2"></i>
                         <div class="d-flex flex-column justify-content-center align-items-center small">
 
-                            <span class="fw-bold">09:00 AM </span> to
-                            <span class="fw-bold mb-2"> 09:00 PM</span>
+                            <span class="fw-bold">09:00 </span> to
+                            <span class="fw-bold mb-2"> 09:00 PM</span> 
                             <div class="d-flex gap-1 align-items-center flex-wrap justify-content-center">
                                 <div class="" v-for="(week, index) in test.weeks" :key="index">
                                     <span class="truncate3">
@@ -44,14 +44,16 @@ export default {
                         { day: 'Wed' },
                         { day: 'Thu' },
                         { day: 'Fri' },
-                    ],
-                },
-                {
-                    id: 2,
-                    weeks: [
                         { day: 'Sat' },
+                        { day: 'Sun' },
                     ],
                 },
+                // {
+                //     id: 2,
+                //     weeks: [
+                //         { day: 'Sat' },
+                //     ],
+                // },
                 // {
                 //     id: 3,
                 //     weeks: [

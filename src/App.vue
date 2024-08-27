@@ -6,14 +6,14 @@
 </template>
 <script>
 import DashboardNav from "@/components/DashboardNav.vue";
-import FooterBar from "@/components/FooterBar.vue";
-import FameFoot from "@/components/FameFoot.vue";
+// import FooterBar from "@/components/FooterBar.vue";
+// import FameFoot from "@/components/FameFoot.vue";
 export default {
   name: "App",
   components: {
     DashboardNav,
-    FooterBar,
-    FameFoot
+    // FooterBar,
+    // FameFoot
   },
   computed: {
     hide() {

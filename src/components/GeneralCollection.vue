@@ -79,7 +79,7 @@
                                 role="button" aria-controls="offcanvasExample" style="height: 200px">
                                 <!-- <img src="https://img101.urbanic.com/v1/703c1c85d9a04f03a11294de9aa4d46f.webp" alt="" -->
                                 <img :src="association.img" alt="" class="rounded-top"
-                                    style="width: 100%; min-width: 100%; min-height: 200px; object-fit: cover; object-position: center;" />
+                                    style="width: 100%; min-width: 100%; min-height: 200px; object-fit: cover; object-position: top;" />
                             </div>
                             <p class="smaller my-2 text-center text-ellipsis2 fw-bold text-capitalize">{{
                                 association.name

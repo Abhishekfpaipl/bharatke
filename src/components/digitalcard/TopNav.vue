@@ -4,7 +4,7 @@
 
         <div class="position-absolute top-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white rotated-background"
             style="background-color:#0000008c">
-            <div class="row w-100 text-center ">
+            <!-- <div class="row w-100 text-center ">
                 <div class="col-4 col-md-4 my-3 border-end">
                     <div class="fw-bold">
                         <div class="fs-4 d-flex justify-content-center align-items-center">
@@ -29,17 +29,17 @@
                         <small>Team Members Count</small>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 
 <script>
-import AutoCounter from '@/components/AutoCounter.vue'
+// import AutoCounter from '@/components/AutoCounter.vue'
 export default {
     name: 'TopNav',
     components: {
-        AutoCounter
+        // AutoCounter
     },
 }
 </script>

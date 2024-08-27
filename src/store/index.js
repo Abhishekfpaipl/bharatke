@@ -141,6 +141,7 @@ export default createStore({
         mobile: 8802172121,
         img: '/img/profile/8802172121.jpeg',
         name: "Aayushmann",
+        counter:false,
         designation: "Director",
         business_name: "Covisor Infotech Pvt Ltd",
         description: "Web development, software development, digital marketing",
@@ -481,7 +482,8 @@ export default createStore({
         id: 2,
         mobile: 9810963346,
         img: '/img/profile/9810963346.jpeg',
-        name: "Mr. Parvinder Singh",
+        name: "Parvinder Singh", 
+        counter:false,
         designation: "India 🇮🇳 Representative",
         business_name: "Thermofin GmbH",
         description: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol",
@@ -494,10 +496,7 @@ export default createStore({
           // { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
           {
             icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://www.thermofin.de/'
-          },
-          {
-            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
-          },
+          }, 
           {
             icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/parvinder-singh-4661939?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
           },
@@ -514,20 +513,21 @@ export default createStore({
             text: "International Sales Marketing, Business Development , Heat Exchangers for Industrial"
           },
         ],
-        promoters: [
-          { image: "/img/users/guruji.jpeg", name: "Guruji", },
-          { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
-          { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
-        ],
+        // promoters: [
+        //   { image: "/img/users/guruji.jpeg", name: "Guruji", },
+        //   { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
+        //   { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
+        // ],
       },
       {
         id: 3,
         mobile: 9811084279,
+        counter:false,
         img: '/img/profile/9811084279.jpeg',
-        name: "Mr. Gaurav Porwal ",
+        name: "Gaurav Porwal ",
         designation: "Editor in Chief ",
         business_name: "Taare Zameen Par Magazine",
-        description: " ",
+        description: "PR Services ",
         rating: 4.5,
         support: 200,
         contact: [
@@ -537,10 +537,7 @@ export default createStore({
           { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
           {
             icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://taarezameenparmagazine.com'
-          },
-          {
-            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
-          },
+          }, 
           {
             icon: 'bi bi-instagram fs-3', name: 'Instagram', url: 'https://www.instagram.com/taarezameenparmagazine/?igsh=MXJteXJuYXRzbzZjZQ%3D%3D'
           },
@@ -555,14 +552,14 @@ export default createStore({
         information: [
           {
             heading: "Description",
-            text: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol"
+            text: "Magazine Coverage, PR Services, Digital Marketing, Book Publications"
           },
         ],
-        promoters: [
-          { image: "/img/users/guruji.jpeg", name: "Guruji", },
-          { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
-          { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
-        ],
+        // promoters: [
+        //   { image: "/img/users/guruji.jpeg", name: "Guruji", },
+        //   { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
+        //   { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
+        // ],
       },
     ]
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="bg-white border rounded-5 mx-2 shadow" style="margin-top: -30px;">
+    <div class="bg-white border-top-0 border rounded-bottom-5 mx-2 shadow" style="margin-top: -30px;">
       <div class="position-relative">
         <div class="d-flex justify-content-between align-items-center px-3 pt-5 rounded-top-5">
           <span @click="saveContact" class="d-flex flex-column align-items-center">
@@ -16,14 +16,14 @@
           <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 130px;height:130px;object-fit: cover; object-position: top">
         </div>
       </div>
-      <div class="d-flex flex-column align-items-center my-2">
+      <div class="d-flex flex-column align-items-center my-3">
         <h3>{{ user.name }}</h3>
         <small class="text-capitalize">{{ user.designation }}</small>
         <small class="text-capitalize">{{ user.business_name }}</small>
         <small class="text-capitalize smaller text-muted text-ellipsis2" style="min-height: 36px;">{{ user.description }}
         </small>
       </div>
-      <div class="" style="min-height:130px">
+      <div v-if="user.promoters" class="" style="min-height:130px">
         <div
           class="position-relative w-100 overflow-x-scroll d-flex justify-content-center align-items-center hide-scroll"
           id="scroll" ref="slider">
