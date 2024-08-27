@@ -1,14 +1,14 @@
 <template>
   <div class=" ">
-    <DigitalTop /> 
+    <DigitalTop :user="user" />
     <TopNav />
-    <TopSection :user="user"/>
-    <ContactCard />
-    <InfoSection />
+    <TopSection :user="user" />
+    <ContactCard :user="user"/>
+    <InfoSection :user="user"/>
     <SocialSchedule />
     <DigitalFooter />
     <CollectionSection />
-    
+
 
   </div>
 </template>
@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      userId:'',
+      userId: '',
       name: '',
       email: '',
       query: ''
@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     user() {
-      let userId = this.$route.params.userId;
+      let userId = this.$route.params.userMobile;
       return this.$store.getters.getUser(userId);
     },
   },

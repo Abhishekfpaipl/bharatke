@@ -121,7 +121,7 @@
             <div class="container">
                 <div class="row row-cols-2 row-cols-md-5 g-1">
                     <div class="col position-relative" v-for="(user, index) in users" :key="index">
-                        <router-link :to="'/digital-card/' + user.id"
+                        <router-link :to="'/profile/' + user.mobile"
                             class="card border-0 rounded p-0 d-flex flex-column align-items-center justify-content-center rounded text-decoration-none">
                             <div class="p-3 overflow-hidden" style="height: 200px">
                                 <img :src="user.img" alt="" class="rounded-top"

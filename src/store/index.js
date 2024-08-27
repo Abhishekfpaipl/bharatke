@@ -138,20 +138,51 @@ export default createStore({
     users: [
       {
         id: 12,
+        mobile: 8802172121,
         img: '/img/members/12.jpg',
-        name: "Ayush",
+        name: "Aayushmann",
+        designation: "Director",
+        business_name: "Covisor Infotech Pvt Ltd",
+        description: "Web development, software development, digital marketing",
         rating: 4.5,
         support: 200,
+        contact: [
+          { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
+          { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
+          { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
+          { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' },
+          {
+            icon: 'bi bi-facebook fs-3', name: 'Facebook', url: 'https://www.facebook.com/Ayush.Covisor/'
+          },
+          {
+            icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in'
+          },
+          {
+            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
+          },
+          {
+            icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/mr-ayushgupta/'
+          },
+        ],
         contactDetails: {
           number: '+918802172121 , +918860012001',
           email: 'ayush@covisor.in, manage.covisor@gmail.com',
           location: '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058',
-          facebook: 'https://www.facebook.com/yourpage',
+          facebook: 'https://www.facebook.com/Ayush.Covisor/',
           instagram: 'https://www.instagram.com/yourpage',
           website: 'https://covisor.in',
-          youtube: 'https://www.youtube.com/',
-          linkedin: 'https://www.linkedin.com/in/yourprofile'
+          linkedin: 'https://www.linkedin.com/in/mr-ayushgupta/'
         },
+        information: [
+          {
+            heading: "Legal Info",
+            text: "CIN:-U74999DL2017PTC310729 , GST:-07AAGCC7975D1ZG"
+          },
+          {
+            heading: "Description",
+            text: "Web development, software development, digital marketing"
+          },
+        ],
         promoters: [
           { image: "/img/users/guruji.jpeg", name: "Guruji", },
           { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
@@ -452,8 +483,8 @@ export default createStore({
     getProducts: state => state.products,
     getCollection: state => state.collections,
     getUsers: state => state.users,
-    getUser: (state) => (userId) => {
-      let index = state.users.findIndex(user => user.id == userId);
+    getUser: (state) => (userMobile) => {
+      let index = state.users.findIndex(user => user.mobile == userMobile);
       return state.users[index];
     },
   },

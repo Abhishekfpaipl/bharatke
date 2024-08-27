@@ -4,7 +4,7 @@
             <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Connect ~</span></p>
 
             <div class="row d-flex justify-content-center ">
-                <div v-for="(icon, index) in contact" :key="index" class="col-3 col-md-3 py-2"
+                <div v-for="(icon, index) in user.contact" :key="index" class="col-3 col-md-3 py-2"
                     @click="handleIconClick(icon.action)">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="rounded-circle border border-5 d-flex align-items-center justify-content-center"
@@ -26,26 +26,14 @@
 <script>
 export default {
     name: 'ContactCard',
+    props: {
+        user: {
+            type: Object,
+            required: true,
+        }
+    },
     data() {
         return {
-            contact: [
-                { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
-                { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' }, 
-                { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
-                { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
-                {
-                    icon: 'bi bi-facebook fs-3', name: 'Facebook', url: 'https://www.facebook.com/yourpage'
-                },
-                {
-                    icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in'
-                },
-                {
-                    icon: 'bi bi-youtube fs-3', name: 'YouTube', url: 'https://www.youtube.com/'
-                },
-                {
-                    icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/yourprofile'
-                },
-            ],
             name: '',
             email: '',
             query: '',
@@ -53,9 +41,9 @@ export default {
     },
     methods: {
         handleIconClick(action) {
-            const phoneNumber = '+918802172121';
-            const emailAddress = 'ayush@covisor.in';
-            const location = '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058';
+            const phoneNumber = this.user.contactDetails.mobile;
+            const emailAddress = this.user.contactDetails.email;
+            const location = this.user.contactDetails.location;
             // const offcanvasQuery = new window.bootstrap.Offcanvas(document.getElementById('offcanvasQuery'));
             // let blob, url, a;
 

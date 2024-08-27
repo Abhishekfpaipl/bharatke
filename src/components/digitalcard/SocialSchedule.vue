@@ -3,7 +3,7 @@
 
         <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Schedule ~</span></p>
         <div class="d-flex justify-content-center">
-            <div class="container row row-cols-2 row-cols-md-3 g-2">
+            <div class="container row row-cols-2 row-cols-md-3 g-2 justify-content-center align-items-center">
                 <div class="col " v-for="(test, index) in test" :key="index">
                     <div
                         class="card card-body bg-light text-secondary d-flex flex-column justify-content-center align-items-center ">
@@ -52,12 +52,12 @@ export default {
                         { day: 'Sat' },
                     ],
                 },
-                {
-                    id: 3,
-                    weeks: [
-                        { day: 'Sun' },
-                    ],
-                }
+                // {
+                //     id: 3,
+                //     weeks: [
+                //         { day: 'Sun' },
+                //     ],
+                // }
             ]
         }
     }

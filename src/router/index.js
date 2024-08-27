@@ -17,7 +17,7 @@ const routes = [
     component: () => import("@/pages/DashboardPage.vue")
   },
   {
-    path: "/digital-card/:userId",
+    path: "/profile/:userMobile",
     name: "DigitalCard",
     component: () => import("@/pages/DigitalCard.vue")
   },

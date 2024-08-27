@@ -4,9 +4,9 @@
         <div class="d-flex align-items-center gap-2" :class="{ 'hide-on-scroll': hideOnScroll }">
             <router-link to="/" 
                 class="text-decoration-none text-dark d-flex align-items-center">
-                <img src="/img/covisor/logo.svg" style="width: 50px;object-fit: contain;">
+                <img :src="user.img" style="width: 40px;object-fit: contain;" class="rounded">
             </router-link>
-            <span class="text-uppercase text-dark fw-bold fs-5">Covisor</span>
+            <span class="text-uppercase text-dark fs-5">{{user.name}}</span>
         </div>
     </div>
 </template>
@@ -14,6 +14,12 @@
 <script>
 export default {
     name: 'ProductTopnav',
+    props:{
+        user:{
+            type: Object,
+            required: true, 
+        }
+    },
     data() {
         return {
             publicPath: process.env.BASE_URL,

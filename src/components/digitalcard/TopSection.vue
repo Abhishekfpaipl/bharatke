@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <div class="bg-white border rounded-5 mx-2 shadow" style="margin-top: -40px;">
+    <div class="bg-white border rounded-5 mx-2 shadow" style="margin-top: -30px;">
       <div class="position-relative">
-        <div class="d-flex justify-content-between align-items-center px-3 pt-3 rounded-top-5">
+        <div class="d-flex justify-content-between align-items-center px-3 pt-5 rounded-top-5">
           <span @click="saveContact" class="d-flex flex-column align-items-center">
             <i class="bi bi-person-plus-fill fs-4"></i>
             <small class="">Contact</small>
@@ -12,27 +12,31 @@
             <small class="ms-2">Share</small>
           </span>
         </div>
-        <div class="rounded-circle position-absolute shadow end-50" style="width:60px;height: 60px;top: -60px;">
-          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 100px;">
+        <div class="position-absolute shadow end-50" style="width:60px;height: 60px;top: -30px;">
+          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 130px;">
         </div>
       </div>
       <div class="d-flex flex-column align-items-center my-2">
         <h3>{{ user.name }}</h3>
-        <small class="">Sales assistant</small>
-        <small class="">B2B service</small>
-        <small class="">Bhybrid by Onhoff</small>
+        <small class="text-capitalize">{{ user.designation }}</small>
+        <small class="text-capitalize">{{ user.business_name }}</small>
+        <small class="text-capitalize smaller text-muted text-ellipsis2" style="min-height: 36px;">{{ user.description }}
+        </small>
       </div>
-      <div
-        class="position-relative w-100 overflow-x-scroll d-flex justify-content-center align-items-center hide-scroll"
-        id="scroll" ref="slider">
-        <div v-for="(review, index) in user.promoters" :key="index" class="p-2 my-3 d-flex flex-column">
-          <img :src="review.image" class="rounded border border" :class="{ 'scale-img': selectedIndex === index }"
-            style="object-fit: contain; width: 50px; height: 50px; transition: transform 0.3s;"
-            @click="selectImage(index)" alt="User Image">
+      <div class="" style="min-height:130px">
+        <div
+          class="position-relative w-100 overflow-x-scroll d-flex justify-content-center align-items-center hide-scroll"
+          id="scroll" ref="slider">
+          <div v-for="(review, index) in user.promoters" :key="index" class="p-2 my-3 d-flex flex-column">
+            <img :src="review.image" class="rounded border border" :class="{ 'scale-img': selectedIndex === index }"
+              style="object-fit: contain; width: 50px; height: 50px; transition: transform 0.3s;"
+              @click="selectImage(index)" alt="User Image">
+          </div>
         </div>
+        <p v-if="selectedIndex !== null" class="small fw-bold text-center text-uppercase">{{
+          user.promoters[selectedIndex].name }}</p>
+
       </div>
-      <p v-if="selectedIndex !== null" class="small fw-bold text-center text-uppercase">{{
-        user.promoters[selectedIndex].name }}</p>
 
     </div>
 
@@ -89,7 +93,7 @@ export default {
       this.selectedIndex = index;
     },
     saveContact() {
-      const { number, email, location, facebook, website, youtube, linkedin , instagram} = this.user.contactDetails;
+      const { number, email, location, facebook, website, youtube, linkedin, instagram } = this.user.contactDetails;
 
       // Generate VCF content with the additional details
       const vcfContent = `BEGIN:VCARD
