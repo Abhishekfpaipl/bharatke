@@ -137,9 +137,9 @@ export default createStore({
 
     users: [
       {
-        id: 12,
+        id: 1,
         mobile: 8802172121,
-        img: '/img/members/12.jpg',
+        img: '/img/profile/8802172121.jpeg',
         name: "Aayushmann",
         designation: "Director",
         business_name: "Covisor Infotech Pvt Ltd",
@@ -475,6 +475,93 @@ export default createStore({
               }
             ],
           },
+        ],
+      },
+      {
+        id: 2,
+        mobile: 9810963346,
+        img: '/img/profile/9810963346.jpeg',
+        name: "Mr. Parvinder Singh",
+        designation: "India 🇮🇳 Representative",
+        business_name: "Thermofin GmbH",
+        description: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol",
+        rating: 4.5,
+        support: 200,
+        contact: [
+          { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
+          { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
+          { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
+          // { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
+          {
+            icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://www.thermofin.de/'
+          },
+          {
+            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
+          },
+          {
+            icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/parvinder-singh-4661939?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+          },
+        ],
+        contactDetails: {
+          number: '9810963346',
+          email: 'Parvinder.singh@thermofin.de, Par_roy@rediffmail.com',
+          website: 'https://www.thermofin.de',
+          linkedin: 'https://www.linkedin.com/in/parvinder-singh-4661939?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+        },
+        information: [
+          {
+            heading: "Description",
+            text: "International Sales Marketing, Business Development , Heat Exchangers for Industrial"
+          },
+        ],
+        promoters: [
+          { image: "/img/users/guruji.jpeg", name: "Guruji", },
+          { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
+          { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
+        ],
+      },
+      {
+        id: 3,
+        mobile: 9811084279,
+        img: '/img/profile/9811084279.jpeg',
+        name: "Mr. Gaurav Porwal ",
+        designation: "Editor in Chief ",
+        business_name: "Taare Zameen Par Magazine",
+        description: " ",
+        rating: 4.5,
+        support: 200,
+        contact: [
+          { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
+          { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' },
+          { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
+          { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
+          {
+            icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://taarezameenparmagazine.com'
+          },
+          {
+            icon: 'bi bi-currency-rupee fs-3', name: 'Pay', url: 'mr.ayushgupta@kotak'
+          },
+          {
+            icon: 'bi bi-instagram fs-3', name: 'Instagram', url: 'https://www.instagram.com/taarezameenparmagazine/?igsh=MXJteXJuYXRzbzZjZQ%3D%3D'
+          },
+        ],
+        contactDetails: {
+          number: '9810963346',
+          email: 'taarezameenpar.magazine@gmail.com',
+          location: '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058',
+          website: 'https://taarezameenparmagazine.com',
+          instagram: 'https://www.instagram.com/taarezameenparmagazine/?igsh=MXJteXJuYXRzbzZjZQ%3D%3D'
+        },
+        information: [
+          {
+            heading: "Description",
+            text: "Heat Exchangers for Industrial Refrigeration for Ammonia , Co2, Propane, Brine and Glycol"
+          },
+        ],
+        promoters: [
+          { image: "/img/users/guruji.jpeg", name: "Guruji", },
+          { image: "/img/users/iskcon.jpeg", name: "Iskcon delhi", },
+          { image: "/img/users/bni.jpeg", name: "BNI dc stellar", },
         ],
       },
     ]

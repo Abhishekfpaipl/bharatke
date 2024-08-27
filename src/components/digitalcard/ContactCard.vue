@@ -41,7 +41,7 @@ export default {
     },
     methods: {
         handleIconClick(action) {
-            const phoneNumber = this.user.contactDetails.mobile;
+            const phoneNumber = this.user.mobile;
             const emailAddress = this.user.contactDetails.email;
             const location = this.user.contactDetails.location;
             // const offcanvasQuery = new window.bootstrap.Offcanvas(document.getElementById('offcanvasQuery'));

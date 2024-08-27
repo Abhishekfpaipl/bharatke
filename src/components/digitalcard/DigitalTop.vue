@@ -2,11 +2,11 @@
     <div class="containerr d-flex justify-content-between align-items-center" ref="topnav"
         :style="`background:rgb(248,249,250, ${backgroundOpacity});`">
         <div class="d-flex align-items-center gap-2" :class="{ 'hide-on-scroll': hideOnScroll }">
-            <router-link to="/" 
-                class="text-decoration-none text-dark d-flex align-items-center">
-                <img :src="user.img" style="width: 40px;object-fit: contain;" class="rounded">
+            <router-link to="/" class="text-decoration-none text-dark d-flex align-items-center">
+                <img v-if="user.img" :src="user.img" style="width: 40px;object-fit: contain;" class="rounded">
+                <i v-else class="bi bi bi-person-square rounded fs-1" ></i>
             </router-link>
-            <span class="text-uppercase text-dark fs-5">{{user.name}}</span>
+            <span class="text-uppercase text-dark fs-5">{{ user.name }}</span>
         </div>
     </div>
 </template>
@@ -14,10 +14,10 @@
 <script>
 export default {
     name: 'ProductTopnav',
-    props:{
-        user:{
+    props: {
+        user: {
             type: Object,
-            required: true, 
+            required: true,
         }
     },
     data() {
@@ -34,7 +34,7 @@ export default {
     methods: {
         handleScroll() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const scrollPercentage = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100; 
+            const scrollPercentage = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
             if (scrollPercentage >= 5 && scrollPercentage <= 6) {
                 this.backgroundOpacity = 0.5;
                 this.hideOnScroll = true;

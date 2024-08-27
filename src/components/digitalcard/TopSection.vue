@@ -13,7 +13,7 @@
           </span>
         </div>
         <div class="position-absolute shadow end-50" style="width:60px;height: 60px;top: -30px;">
-          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 130px;">
+          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 130px;height:130px;object-fit: cover; object-position: top">
         </div>
       </div>
       <div class="d-flex flex-column align-items-center my-2">
