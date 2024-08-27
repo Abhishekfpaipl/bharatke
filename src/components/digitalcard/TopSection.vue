@@ -1,28 +1,39 @@
 <template>
   <div class="">
-    <div class="border rounded-5 mx-2 shadow">
+    <div class="bg-white border rounded-5 mx-2 shadow" style="margin-top: -40px;">
       <div class="position-relative">
-        <div class="d-flex justify-content-between align-items-center px-3 rounded-top-5">
+        <div class="d-flex justify-content-between align-items-center px-3 pt-3 rounded-top-5">
           <span @click="saveContact" class="d-flex flex-column align-items-center">
-            <i class="bi bi-download fs-4"></i>
-            <small class="">Save</small>
+            <i class="bi bi-person-plus-fill fs-4"></i>
+            <small class="">Contact</small>
           </span>
           <span @click="share" class="d-flex flex-column align-items-center">
-            <i class="bi bi-share fs-4"></i>
+            <i class="bi bi-share-fill fs-4"></i>
             <small class="ms-2">Share</small>
           </span>
         </div>
         <div class="rounded-circle position-absolute shadow end-50" style="width:60px;height: 60px;top: -60px;">
-          <img src="https://cdn.bhybrid.org/imgcdn/20230708200505/card/p1109photo.jpg" alt="Logo"
-            class="rounded-3 border border-dark" style="width: 100px;">
+          <img :src="user.img" alt="Logo" class="rounded-3 border border-dark" style="width: 100px;">
         </div>
       </div>
       <div class="d-flex flex-column align-items-center my-2">
-        <h3>Business Name</h3>
+        <h3>{{ user.name }}</h3>
         <small class="">Sales assistant</small>
         <small class="">B2B service</small>
         <small class="">Bhybrid by Onhoff</small>
-      </div> 
+      </div>
+      <div
+        class="position-relative w-100 overflow-x-scroll d-flex justify-content-center align-items-center hide-scroll"
+        id="scroll" ref="slider">
+        <div v-for="(review, index) in user.promoters" :key="index" class="p-2 my-3 d-flex flex-column">
+          <img :src="review.image" class="rounded border border" :class="{ 'scale-img': selectedIndex === index }"
+            style="object-fit: contain; width: 50px; height: 50px; transition: transform 0.3s;"
+            @click="selectImage(index)" alt="User Image">
+        </div>
+      </div>
+      <p v-if="selectedIndex !== null" class="small fw-bold text-center text-uppercase">{{
+        user.promoters[selectedIndex].name }}</p>
+
     </div>
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasQuery" aria-labelledby="offcanvasQueryLabel">
@@ -59,79 +70,39 @@
 <script>
 export default {
   name: "TopSection",
+  props: {
+    user: {
+      type: Object,
+      required: true,
+    }
+  },
   data() {
     return {
-      contact: [
-        { name: 'Email', icon: 'bi-envelope fs-5', action: 'openEmail' },
-        { name: 'Call', icon: 'bi-telephone fs-5', action: 'openDialer' },
-        // { name: 'Message', icon: 'bi-chat fs-5', action: 'openSMS' },
-        // { name: 'Save', icon: 'bi-download fs-5', action: 'downloadData' },
-        { name: 'Business', icon: 'bi-building fs-5', action: '' },
-        { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
-        { name: 'Map', icon: 'bi-geo fs-5', action: 'openMaps' },
-        { name: 'Query', icon: 'bi-question-circle fs-5', action: 'openQuery' },
-      ],
       name: '',
       email: '',
       query: '',
+      selectedIndex: null,
     }
   },
   methods: {
-    handleIconClick(action) {
-      const phoneNumber = '+918826658501';
-      const emailAddress = 'abhisheknegi042@gmail.com';
-      const location = '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058';
-      const offcanvasQuery = new window.bootstrap.Offcanvas(document.getElementById('offcanvasQuery'));
-      // let blob, url, a;
-
-      // const vcardContent = `BEGIN:VCARD
-      // VERSION:3.0
-      // N:;${phoneNumber};;;
-      // FN:${phoneNumber}
-      // TEL;TYPE=CELL:${phoneNumber}
-      // END:VCARD`;
-
-      switch (action) {
-        case 'openEmail':
-          window.location.href = `mailto:${emailAddress}`;
-          break;
-        case 'openDialer':
-          window.location.href = `tel:${phoneNumber}`;
-          break;
-        // case 'openSMS':
-        //   window.location.href = `sms:${phoneNumber}`;
-        //   break;
-        // case 'downloadData':
-        //   blob = new Blob([vcardContent], { type: 'text/vcard' });
-        //   url = window.URL.createObjectURL(blob);
-        //   a = document.createElement('a');
-        //   a.href = url;
-        //   a.download = `contact.vcf`;
-        //   a.click();
-        //   window.URL.revokeObjectURL(url);
-        //   break;
-        case 'openWhatsapp':
-          window.open(`https://wa.me/${phoneNumber}?text=Hello...`, '_blank');
-          break;
-        case 'openMaps':
-          window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location)}`, '_blank');
-          break;
-        case 'openQuery':
-          offcanvasQuery.show();
-          break;
-        default:
-          break;
-      }
+    selectImage(index) {
+      this.selectedIndex = index;
     },
     saveContact() {
-      const contactNumber = '+918826658501';
-      const contactName = 'Contact Name'; // Add the contact name here
+      const { number, email, location, facebook, website, youtube, linkedin , instagram} = this.user.contactDetails;
 
-      // Generate VCF content
+      // Generate VCF content with the additional details
       const vcfContent = `BEGIN:VCARD
 VERSION:3.0
-FN:${contactName}
-TEL:${contactNumber}
+FN:${this.user.name}
+TEL:${number}
+EMAIL:${email}
+ADR:${location}
+URL:${website}
+URL:${facebook}
+URL:${youtube}
+URL:${linkedin}
+URL:${instagram}
 END:VCARD`;
 
       // Create a blob from the VCF content
@@ -140,7 +111,7 @@ END:VCARD`;
       // Create a link element
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
-      link.download = 'contact.vcf';
+      link.download = `${this.user.name}-contact.vcf`;
 
       // Trigger the download
       document.body.appendChild(link);
@@ -176,3 +147,17 @@ END:VCARD`;
   }
 };
 </script>
+<style>
+.scale-img {
+  transform: scale(1.2);
+}
+
+.selected-name {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  /* Adjust color as needed */
+  z-index: 10;
+}
+</style>

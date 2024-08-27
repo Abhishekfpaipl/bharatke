@@ -1,12 +1,12 @@
 <template>
     <div class="containerr d-flex justify-content-between align-items-center" ref="topnav"
-        :style="`background:rgb(143,145,147, ${backgroundOpacity});`">
-        <div class="d-flex align-items-center gap-3" :class="{ 'hide-on-scroll': hideOnScroll }">
+        :style="`background:rgb(248,249,250, ${backgroundOpacity});`">
+        <div class="d-flex align-items-center gap-2" :class="{ 'hide-on-scroll': hideOnScroll }">
             <router-link to="/" 
                 class="text-decoration-none text-dark d-flex align-items-center">
-                <img src="https://cdn.bhybrid.org/imgcdn/20230708200505/card/p1109photo.jpg" style="width: 50px;object-fit: contain;">
+                <img src="/img/covisor/logo.svg" style="width: 50px;object-fit: contain;">
             </router-link>
-            <span>Business Name</span>
+            <span class="text-uppercase text-dark fw-bold fs-5">Covisor</span>
         </div>
     </div>
 </template>

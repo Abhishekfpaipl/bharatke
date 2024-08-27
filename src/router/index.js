@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router"; 
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
@@ -17,19 +17,19 @@ const routes = [
     component: () => import("@/pages/DashboardPage.vue")
   },
   {
-    path: "/digital-card",
+    path: "/digital-card/:userId",
     name: "DigitalCard",
     component: () => import("@/pages/DigitalCard.vue")
-  }, 
+  },
   // {
   //   path: "/review-list",
   //   name: "ReviewList ",
   //   component: () => import("@/pages/ReviewList.vue")
   // },
   {
-    path: "/list-your-business",
-    name: "ListYourBusiness",
-    component: () => import("@/pages/ListYourBusiness.vue")
+    path: "/search",
+    name: "SearchPage",
+    component: () => import("@/pages/SearchPage.vue")
   },
   {
     path: "/business",
@@ -221,11 +221,6 @@ const routes = [
     path: "/offer-page",
     name: "OfferPage",
     component: () => import('@/pages/OfferPage.vue')
-  },
-  {
-    path: "/collection-page",
-    name: "CollectionPage",
-    component: () => import('@/pages/CollectionPage.vue')
   },
   {
     path: "/business-seller",

@@ -1,24 +1,14 @@
 <template>
     <div class="">
         <div class="container my-3 py-3">
-            <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Contact ~</span></p>
-            <!-- <div class="row justify-content-center">
-                <div v-for="(icon, index) in contact" :key="index"
-                    class="col-4 d-flex flex-column align-items-center my-2" @click="handleIconClick(icon.action)">
-                    <div class="d-flex justify-content-center align-items-center shadow rounded-3 bg-white"
-                        style="width: 40px; height: 40px;">
-                        <i class="bi" :class="icon.icon"></i>
-                    </div>
-                    <p class="mt-2" style="font-size: 12px;">{{ icon.name }}</p>
-                </div>
-            </div> -->
+            <p class="px-2 py-3 text-center mb-0 bill"><span class="fs-2">~ Connect ~</span></p>
 
             <div class="row d-flex justify-content-center ">
-                <div v-for="(icon, index) in contact" :key="index" class="col-3 col-md-1 py-2"
+                <div v-for="(icon, index) in contact" :key="index" class="col-3 col-md-3 py-2"
                     @click="handleIconClick(icon.action)">
                     <div class="d-flex justify-content-center align-items-center">
                         <div class="rounded-circle border border-5 d-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px;background: linear-gradient(133deg, rgba(106,106,106,1) 45%, rgba(0,0,0,1) 55%);">
+                            style="width: 60px; height: 60px;background: black !important;">
                             <a class="text-white" :href="icon.url" target="_blank">
                                 <i :class="icon.icon"></i>
                             </a>
@@ -29,33 +19,6 @@
             </div>
         </div>
 
-        <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasQuery" aria-labelledby="offcanvasQueryLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasQueryLabel">Query</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <form @submit.prevent="submitQuery()" class="row g-3 needs-validation" novalidate>
-                    <div class="w-100 p-2 form-floating">
-                        <input type="text" class="form-control" placeholder="Mobile" v-model="name" required>
-                        <label for="floatingInput" class="text-muted">First name</label>
-                    </div>
-                    <div class="w-100 p-2 form-floating">
-                        <input type="text" class="form-control" placeholder="Mobile" v-model="email" required>
-                        <label class="text-muted">Email Or Mobile No.</label>
-                    </div>
-                    <div class="form-floating">
-                        <textarea v-model="query" rows="2" class="form-control flex-fill"
-                            placeholder="Type your message..." required>
-              </textarea>
-                        <label class="text-muted">Enter Your Query</label>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit Query</button>
-                    </div>
-                </form>
-            </div>
-        </div> -->
 
     </div>
 
@@ -66,12 +29,22 @@ export default {
     data() {
         return {
             contact: [
-                { name: 'Email', icon: 'bi-envelope fs-5', action: 'openEmail' },
-                { name: 'Call', icon: 'bi-telephone fs-5', action: 'openDialer' },
-                // { name: 'Business', icon: 'bi-building fs-5', action: '' },
+                { name: 'Email', icon: 'bi-envelope-fill fs-5', action: 'openEmail' },
+                { name: 'Call', icon: 'bi-telephone-fill fs-5', action: 'openDialer' }, 
                 { name: 'Whatsapp', icon: 'bi-whatsapp fs-5', action: 'openWhatsapp' },
-                { name: 'Map', icon: 'bi-geo fs-5', action: 'openMaps' },
-                // { name: 'Query', icon: 'bi-question-circle fs-5', action: 'openQuery' },
+                { name: 'Map', icon: 'bi-geo-fill fs-5', action: 'openMaps' }, 
+                {
+                    icon: 'bi bi-facebook fs-3', name: 'Facebook', url: 'https://www.facebook.com/yourpage'
+                },
+                {
+                    icon: 'bi bi-globe fs-3', name: 'Website', url: 'https://covisor.in'
+                },
+                {
+                    icon: 'bi bi-youtube fs-3', name: 'YouTube', url: 'https://www.youtube.com/'
+                },
+                {
+                    icon: 'bi bi-linkedin fs-3', name: 'LinkedIn', url: 'https://www.linkedin.com/in/yourprofile'
+                },
             ],
             name: '',
             email: '',
@@ -80,8 +53,8 @@ export default {
     },
     methods: {
         handleIconClick(action) {
-            const phoneNumber = '+918826658501';
-            const emailAddress = 'abhisheknegi042@gmail.com';
+            const phoneNumber = '+918802172121';
+            const emailAddress = 'ayush@covisor.in';
             const location = '2nd Floor, Block B1/632, Janakpuri, Delhi, 110058';
             // const offcanvasQuery = new window.bootstrap.Offcanvas(document.getElementById('offcanvasQuery'));
             // let blob, url, a;
